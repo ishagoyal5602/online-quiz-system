@@ -1,4 +1,3 @@
-// script.js
 
 let questions = [
 
@@ -86,8 +85,6 @@ let questionElement = document.getElementById("question");
 
 let optionButtons = document.getElementsByClassName("option-btn");
 
-/* Start Quiz */
-
 function startQuiz(){
 
     studentName = document.getElementById("name").value;
@@ -110,8 +107,6 @@ function startQuiz(){
 
     loadQuestion();
 }
-
-/* Load Question */
 
 function loadQuestion(){
 
@@ -168,8 +163,6 @@ function nextQuestion(){
     }
 }
 
-/* Show Result */
-
 function showResult(){
 
     document.getElementById("quiz-container").classList.add("hide");
@@ -182,8 +175,6 @@ function showResult(){
     document.getElementById("score").innerText =
         "Your Score: " + score + " / 10";
 }
-
-/* Restart Quiz */
 
 function restartQuiz(){
 
