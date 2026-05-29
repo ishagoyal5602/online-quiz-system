@@ -1,0 +1,83 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Student Details Page -->
+
+    <div class="start-container" id="start-page">
+
+        <h1>Online Quiz Portal</h1>
+
+        <p>Enter your details before starting the quiz</p>
+
+        <input type="text" id="name" placeholder="Enter Your Name">
+
+        <input type="text" id="rollno" placeholder="Enter Roll Number">
+
+        <button onclick="startQuiz()">
+            Start Quiz
+        </button>
+
+    </div>
+
+    <!-- Quiz Section -->
+
+    <div class="quiz-container hide" id="quiz-container">
+
+        <h2 id="student-info"></h2>
+
+        <h1>Quiz Questions</h1>
+
+        <div id="quiz-box">
+
+            <h2 id="question"></h2>
+
+            <div class="options">
+
+                <button class="option-btn" onclick="checkAnswer(this)"></button>
+
+                <button class="option-btn" onclick="checkAnswer(this)"></button>
+
+                <button class="option-btn" onclick="checkAnswer(this)"></button>
+
+                <button class="option-btn" onclick="checkAnswer(this)"></button>
+
+            </div>
+
+            <button id="next-btn" onclick="nextQuestion()">
+                Next Question
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Result Section -->
+
+    <div id="result-box" class="hide">
+
+        <h2>Quiz Completed</h2>
+
+        <p id="final-name"></p>
+
+        <p id="score"></p>
+
+        <button onclick="restartQuiz()">
+            Restart Quiz
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
